@@ -1,0 +1,35 @@
+{
+  "name": "genpark-visual-dag-agent-workflow-tool-chainer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Visual directed acyclic graph agent workflow tool chainer coordinating conditional branch iterations and state checkpoints.",
+  "author": "genpark",
+  "category": "agent-orchestration",
+  "tags": [
+    "dify",
+    "flowise",
+    "dag-workflow",
+    "tool-chainer",
+    "visual-orchestrator"
+  ],
+  "inputs": {
+    "dag_graph_definition": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "dag_execution_id": {
+      "type": "string"
+    },
+    "nodes_executed_count": {
+      "type": "integer"
+    },
+    "checkpoint_recovery_available": {
+      "type": "boolean"
+    },
+    "dag_execution_telemetry_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
